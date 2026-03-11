@@ -222,7 +222,7 @@ class GiboManager:
                 print(f"{i}. Decryption Faild {e}")
                 continue
 
-            player = "AI" if move["player"] == "ai" else "Human" #정보 출력                                                                                                                                                                     qqqqqqqqqqqqqq
+            player = "AI" if move["player"] == "ai" else "Human" #정보 출력
             y, x = move["y"], move["x"]
             t = datetime.fromtimestamp(move.get("t", 0)).strftime('%Y-%m-%d %H:%M:%S')
             print(f"{i}. Player: {player}, Position: ({y}, {x}), Time: {t}")
